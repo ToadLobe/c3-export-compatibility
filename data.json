@@ -71,7 +71,8 @@
                             "status": "supported"
                         },
                         "safari": {
-                            "status": "unsupported"
+                            "status": "unsupported",
+                            "notes": "Support removed in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "chrome": {
                             "status": "supported"
@@ -221,7 +222,7 @@
                         },
                         "windows": {
                             "status": "partial",
-                            "notes": "OBS requires users to manually select the 'Windows 10' capture mode. Automatic/BitBlt modes show a blank screen. Windows gamebar recording works as expected.",
+                            "notes": "BitBlt (a common method for capturing window recordings on Windows) is not supported. OBS requires users to manually select the 'Windows 10' capture mode. Windows gamebar uses a newer, supported capture method.",
                             "github": ""
                         },
                         "safari": {
