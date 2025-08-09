@@ -75,8 +75,7 @@ class CompatibilityMatrix {
             <td class="support-cell status-${supportData.status}"
                 data-feature="${feature.name}"
                 data-exporter="${exporter.id}"
-                style="cursor: pointer"
-                title="${supportData.status}: ${supportData.notes || ''}">
+                style="cursor: pointer">
                 <i class="${this.getStatusIcon(supportData.status)}"></i>
                 ${asterisk}
             </td>

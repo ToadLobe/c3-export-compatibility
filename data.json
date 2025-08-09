@@ -157,8 +157,7 @@
                     "support": {
                         "nodejs": {
                             "status": "partial",
-                            "notes": "Unadjusted mouse movement is unsupported on Linux. Locking the mouse pointer will fail if the unadjusted option is checked.",
-                            "github": "https://github.com/Scirra/Construct-bugs/issues/8389"
+                            "notes": "Unadjusted mouse movement is unsupported on Linux. Locking the mouse pointer will fail if the unadjusted option is checked. See <a href='https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock#browser_compatibility' target='_blank' rel='noopener noreferrer'>MDN Docs</a> for more information."
                         },
                         "windows": {
                             "status": "supported"
