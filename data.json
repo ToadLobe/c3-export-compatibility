@@ -1,0 +1,507 @@
+{
+    "exporters": [
+        {
+            "id": "nodejs",
+            "name": "NW.js",
+            "icon": "ti ti-brand-nodejs"
+        },
+        {
+            "id": "windows",
+            "name": "WebView2",
+            "icon": "ti ti-brand-windows"
+        },
+        {
+            "id": "safari",
+            "name": "WKWebView",
+            "icon": "ti ti-brand-safari"
+        },
+        {
+            "id": "chrome",
+            "name": "CEF (Linux)",
+            "icon": "ti ti-brand-chrome"
+        }
+    ],
+    "categories": [
+        {
+            "name": "General Functionality",
+            "features": [
+                {
+                    "name": "WebGPU",
+                    "support": {
+                        "nodejs": {
+                            "status": "partial",
+                            "notes": "Only supported on macOS.",
+                            "github": ""
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "unsupported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Multi-GPU Power Preference (WIP)",
+                    "support": {
+                        "nodejs": {
+                            "status": "unknown"
+                        },
+                        "windows": {
+                            "status": "unknown"
+                        },
+                        "safari": {
+                            "status": "unknown"
+                        },
+                        "chrome": {
+                            "status": "unknown"
+                        }
+                    }
+                },
+                {
+                    "name": "Web Workers",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "unsupported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Fixed Distribution",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "partial",
+                            "notes": "Can be configured manually. See <a href='https://www.construct.net/en/tutorials/exporting-windows-webview2-2685' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/tutorials/exporting-windows-webview2-2685</a>"
+                        },
+                        "safari": {
+                            "status": "unsupported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Evergreen Distribution",
+                    "support": {
+                        "nodejs": {
+                            "status": "unsupported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "unsupported"
+                        }
+                    }
+                },
+                {
+                    "name": "Asset Bundling",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported",
+                            "notes": "Uses an inefficient and ineffective packaging method (zip compression)."
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Maximise, Minimise & Restore",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        },
+                        "safari": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        },
+                        "chrome": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        }
+                    }
+                },
+                {
+                    "name": "Pointer Lock API",
+                    "support": {
+                        "nodejs": {
+                            "status": "partial",
+                            "notes": "Unadjusted mouse movement is unsupported on Linux. Locking the mouse pointer will fail if the unadjusted option is checked.",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8389"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8733"
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8389"
+                        }
+                    }
+                },
+                {
+                    "name": "Prevent Window Resize",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/make-games/releases/beta/r451</a>"
+                        },
+                        "safari": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/make-games/releases/beta/r451</a>"
+                        },
+                        "chrome": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/make-games/releases/beta/r451</a>"
+                        }
+                    }
+                },
+                {
+                    "name": "Frameless Window",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        },
+                        "safari": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        },
+                        "chrome": {
+                            "status": "supported",
+                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                        }
+                    }
+                },
+                {
+                    "name": "3rd Party Screen Capture",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported",
+                            "notes": "Requires browser flag <code>--in-process-gpu.</code>"
+                        },
+                        "windows": {
+                            "status": "partial",
+                            "notes": "OBS requires users to manually select the 'Windows 10' capture mode. Automatic/BitBlt modes show a blank screen. Windows gamebar recording works as expected.",
+                            "github": ""
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Videos (WIP)",
+                    "support": {
+                        "nodejs": {
+                            "status": "unknown"
+                        },
+                        "windows": {
+                            "status": "unknown"
+                        },
+                        "safari": {
+                            "status": "unknown"
+                        },
+                        "chrome": {
+                            "status": "unknown"
+                        }
+                    }
+                },
+                {
+                    "name": "Hidden Browser Prompts",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "unsupported",
+                            "github": "https://github.com/MicrosoftEdge/WebView2Feedback/issues/4960"
+                        },
+                        "safari": {
+                            "status": "unknown",
+                            "notes": "Can't test this feature without pointer lock functionality."
+                        },
+                        "chrome": {
+                            "status": "unknown",
+                            "notes": "Can't test this feature without pointer lock functionality."
+                        }
+                    }
+                },
+                {
+                    "name": "Export Command Line Args",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "github": ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Steamworks (Greenworks vs. Steamworks)",
+            "features": [
+                {
+                    "name": "Overlay",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported",
+                            "notes": "Requires browser flag <code>--in-process-gpu.</code>"
+                        },
+                        "windows": {
+                            "status": "unsupported",
+                            "notes": "Rendering as an overlay is not supported. Steam opens the relevant Steam window on top of the game as a fallback. This action will exit fullscreen mode. See <a href=https://www.construct.net/en/blogs/ashleys-blog-2/trying-show-steam-overlay-1861>this blog post</a>.",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "notes": "Rendering as an overlay is not supported. Steam opens the relevant Steam window on top of the game as a fallback. This action will exit fullscreen mode. See <a href=https://www.construct.net/en/blogs/ashleys-blog-2/trying-show-steam-overlay-1861>this blog post</a>.",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "notes": "Rendering as an overlay is not supported. Steam opens the relevant Steam window on top of the game as a fallback. This action will exit fullscreen mode. See <a href=https://www.construct.net/en/blogs/ashleys-blog-2/trying-show-steam-overlay-1861>this blog post</a>.",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
+                        }
+                    }
+                },
+                {
+                    "name": "Remote Play Together (WIP)",
+                    "support": {
+                        "nodejs": {
+                            "status": "unknown"
+                        },
+                        "windows": {
+                            "status": "unknown"
+                        },
+                        "safari": {
+                            "status": "unknown"
+                        },
+                        "chrome": {
+                            "status": "unknown"
+                        }
+                    }
+                },
+                {
+                    "name": "Steam Input (WIP)",
+                    "support": {
+                        "nodejs": {
+                            "status": "unknown"
+                        },
+                        "windows": {
+                            "status": "unknown"
+                        },
+                        "safari": {
+                            "status": "unknown"
+                        },
+                        "chrome": {
+                            "status": "unknown",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8625"
+                        }
+                    }
+                },
+                {
+                    "name": "Achievements",
+                    "support": {
+                        "nodejs": {
+                            "status": "partial"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Languages",
+                    "support": {
+                        "nodejs": {
+                            "status": "partial",
+                            "notes": "No support for fetching a list of available languages."
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "DLC Management",
+                    "support": {
+                        "nodejs": {
+                            "status": "unsupported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Authentication",
+                    "support": {
+                        "nodejs": {
+                            "status": "unsupported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "File Access (NW.js File Operations vs. File System Plugin)",
+            "features": [
+                {
+                    "name": "Rename Files",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "github": ""
+                        }
+                    }
+                },
+                {
+                    "name": "Drag & Drop Files",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "github": ""
+                        }
+                    }
+                },
+                {
+                    "name": "Recursive Folder Contents",
+                    "support": {
+                        "nodejs": {
+                            "status": "unsupported"
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                },
+                {
+                    "name": "Cross-Platform Paths",
+                    "support": {
+                        "nodejs": {
+                            "status": "partial",
+                            "notes": "Possible using platform conditionals and path concatenation, but no support for known folders."
+                        },
+                        "windows": {
+                            "status": "supported"
+                        },
+                        "safari": {
+                            "status": "supported"
+                        },
+                        "chrome": {
+                            "status": "supported"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

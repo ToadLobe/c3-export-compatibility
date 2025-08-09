@@ -1,0 +1,157 @@
+
+body {
+    font-family: system-ui, Roboto, sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+
+.content-container {
+    width: 80vw;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.compat-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    border: 4px solid white;
+}
+
+.compat-table th,
+.compat-table td {
+    padding: 0.5rem;
+}
+
+.compat-table th {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.compat-table thead th:not(:first-child) {
+    width: 120px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.compat-table thead th:not(:first-child) i {
+    display: block;
+    font-size: 2em;
+    margin: 0 auto 0.5rem auto;
+}
+
+.compat-table thead th:not(:first-child) {
+    padding: 1rem 0.5rem;
+}
+
+.compat-table td:first-child {
+    font-weight: 500;
+    white-space: normal;
+    word-wrap: break-word;
+    min-width: 12rem;
+}
+
+.compat-table td:not(:first-child) {
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.support-cell {
+    cursor: pointer;
+    position: relative;
+}
+
+.support-cell:hover {
+    opacity: 0.8;
+}
+
+.support-cell.status-supported {
+    background-color: #4caf50;
+    color: white;
+}
+
+.support-cell.status-partial {
+    background-color: #ff9800;
+    color: white;
+}
+
+.support-cell.status-unsupported {
+    background-color: #f44336;
+    color: white;
+}
+
+.support-cell.status-unknown {
+    background-color: #eeeeee;
+}
+
+.support-cell.status-supported.selected {
+    background-color: white;
+    color: #4caf50;
+}
+
+.support-cell.status-partial.selected {
+    background-color: white;
+    color: #ff9800;
+}
+
+.support-cell.status-unsupported.selected {
+    background-color: white;
+    color: #f44336;
+}
+
+.support-cell.status-unknown.selected {
+    background-color: white;
+}
+
+.category-header {
+    background-color: #eeeeee !important;
+}
+
+.details-row {
+    display: none;
+    background-color: white;
+}
+
+.details-row.expanded {
+    display: table-row;
+}
+
+.details-content {
+    padding: 1rem;
+    font-size: 0.8rem;
+    border-left: 4px solid var(--bar-color);
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.details-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.details-content p {
+    margin: 0.5rem 0 0 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .compat-table thead th:not(:first-child) {
+        width: 60px;
+    }
+
+    .compat-table thead th:not(:first-child) .platform-text {
+        display: none;
+    }
+
+    .compat-table thead th:not(:first-child) i {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+}
