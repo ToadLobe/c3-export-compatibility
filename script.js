@@ -41,7 +41,7 @@ class CompatibilityMatrix {
             supported: '#4caf50',
             partial: '#ff9800',
             unsupported: '#f44336',
-            unknown: '#9e9e9e'
+            unknown: '#eeeeee'
         };
         return colors[status] || '#0066cc';
     }

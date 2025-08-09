@@ -1,18 +1,23 @@
-
 body {
     font-family: system-ui, Roboto, sans-serif;
     margin: 0;
     padding: 2rem;
+    overflow-x: hidden;
 }
 
 .content-container {
-    width: 80vw;
+    width: 95vw;
     max-width: 64rem;
     margin: 0 auto;
 }
 
 header {
     margin-bottom: 2rem;
+}
+
+#compatibility-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .compat-table {
@@ -50,13 +55,6 @@ header {
     padding: 1rem 0.5rem;
 }
 
-.compat-table td:first-child {
-    font-weight: 500;
-    white-space: normal;
-    word-wrap: break-word;
-    min-width: 12rem;
-}
-
 .compat-table td:not(:first-child) {
     text-align: center;
     white-space: normal;
@@ -66,10 +64,11 @@ header {
 .support-cell {
     cursor: pointer;
     position: relative;
+    transition: opacity 0.2s ease;
 }
 
 .support-cell:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .support-cell.status-supported {
@@ -142,8 +141,34 @@ header {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .content-container {
+        width: calc(100vw - 2rem);
+        margin: 0 1rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
     .compat-table thead th:not(:first-child) {
         width: 60px;
+        padding: 0.75rem 0.25rem;
     }
 
     .compat-table thead th:not(:first-child) .platform-text {
@@ -153,5 +178,83 @@ header {
     .compat-table thead th:not(:first-child) i {
         font-size: 1.5em;
         margin-bottom: 0;
+    }
+
+    .compat-table td:first-child {
+        font-size: 0.9rem;
+        min-width: 8rem;
+        padding: 0.75rem 0.5rem;
+    }
+
+    .compat-table td:not(:first-child) {
+        padding: 0.75rem 0.25rem;
+    }
+
+    .details-content {
+        padding: 1rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .content-container {
+        width: calc(100vw - 1rem);
+        margin: 0 0.5rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    .compat-table thead th:not(:first-child) {
+        width: 50px;
+        padding: 0.5rem 0.125rem;
+    }
+
+    .compat-table thead th:not(:first-child) i {
+        font-size: 1.25em;
+    }
+
+    .compat-table td:first-child {
+        font-size: 0.85rem;
+        min-width: 6rem;
+        padding: 0.5rem 0.25rem;
+    }
+
+    .compat-table td:not(:first-child) {
+        padding: 0.5rem 0.125rem;
+    }
+
+    .compat-table th,
+    .compat-table td {
+        min-height: 44px;
+    }
+
+    .support-cell {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .support-cell i {
+        font-size: 1.2em;
+    }
+
+    .details-content {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .details-content h4 {
+        font-size: 0.9rem;
     }
 }
