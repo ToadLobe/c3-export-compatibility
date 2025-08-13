@@ -148,7 +148,7 @@
                         },
                         "chrome": {
                             "status": "supported",
-                            "notes": "New in r451. See <a href='https://www.construct.net/en/make-games/releases/beta/r451' target='_blank' rel='noopener noreferrer'>release notes</a>."
+                            "notes": "New in r452. See <a href='https://www.construct.net/en/make-games/releases/beta/r452' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         }
                     }
                 },
@@ -435,6 +435,26 @@
                         "windows": {
                             "status": "unsupported",
                             "github": ""
+                        },
+                        "safari": {
+                            "status": "unsupported",
+                            "github": ""
+                        },
+                        "chrome": {
+                            "status": "unsupported",
+                            "github": ""
+                        }
+                    }
+                },
+                {
+                    "name": "Move Files",
+                    "support": {
+                        "nodejs": {
+                            "status": "supported"
+                        },
+                        "windows": {
+                            "status": "supported",
+                            "notes": "New in r452. See <a href='https://www.construct.net/en/make-games/releases/beta/r452' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "safari": {
                             "status": "unsupported",
