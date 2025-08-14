@@ -13,14 +13,58 @@ class CompatibilityMatrix {
 
     async init() {
         try {
-            const response = await fetch('data.json');
-            this.data = await response.json();
+            // Load both data and README content
+            const [dataResponse, readmeResponse] = await Promise.all([
+                fetch('data.json'),
+                fetch('README.md')
+            ]);
+            
+            this.data = await dataResponse.json();
+            const readmeText = await readmeResponse.text();
+            
+            this.updateDescriptionFromReadme(readmeText);
             this.render();
             this.attachEventListeners();
             this.setupFilters();
         } catch (error) {
             console.error('Failed to load compatibility data:', error);
             this.container.innerHTML = '<p>Failed to load compatibility data</p>';
+        }
+    }
+
+    updateDescriptionFromReadme(readmeText) {
+        // Extract the description section from README (from "This table documents" to the end of bullet points)
+        const lines = readmeText.split('\n');
+        let descriptionLines = [];
+        let inDescription = false;
+
+        for (const line of lines) {
+            if (line.startsWith('This table documents')) {
+                inDescription = true;
+                descriptionLines.push(line);
+            } else if (inDescription && (line.startsWith('- ') || line.trim() === '')) {
+                descriptionLines.push(line);
+                if (line.trim() === '' && descriptionLines.some(l => l.startsWith('- '))) {
+                    break; // End of description section after empty line
+                }
+            } else if (inDescription) {
+                break; // End of description section
+            }
+        }
+
+        // Update the page description with proper Markdown formatting
+        const descriptionElement = document.querySelector('header p');
+        if (descriptionElement && descriptionLines.length > 0) {
+            // Convert Markdown to HTML
+            let htmlContent = descriptionLines
+                .join('\n')
+                .replace(/^- (.+)$/gm, '<li>$1</li>') // Convert bullet points to list items
+                .replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>') // Wrap list items in ul tags
+                .replace(/\n/g, '<br>') // Convert line breaks
+                .replace(/<br><ul>/g, '<ul>') // Clean up br before ul
+                .replace(/<\/ul><br>/g, '</ul>'); // Clean up br after ul
+            
+            descriptionElement.innerHTML = htmlContent;
         }
     }
 
