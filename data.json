@@ -118,8 +118,8 @@
                     "name": "Asset Bundling",
                     "support": {
                         "nodejs": {
-                            "status": "supported",
-                            "notes": "Uses an inefficient and ineffective packaging method (zip compression)."
+                            "status": "partial",
+                            "notes": "Uses an inefficient and ineffective packaging method (zip compression). Not viable for large projects. Offers poor obfuscation."
                         },
                         "windows": {
                             "status": "supported"
