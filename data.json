@@ -40,7 +40,8 @@
                             "status": "unsupported"
                         },
                         "chrome": {
-                            "status": "supported"
+                            "status": "unsupported",
+                            "github": "https://issues.chromium.org/issues/40218893"
                         }
                     }
                 },
