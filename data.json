@@ -40,7 +40,8 @@
                             "status": "unsupported"
                         },
                         "chrome": {
-                            "status": "supported"
+                            "status": "unsupported",
+                            "github": "https://issues.chromium.org/issues/40218893"
                         }
                     }
                 },
@@ -118,8 +119,8 @@
                     "name": "Asset Bundling",
                     "support": {
                         "nodejs": {
-                            "status": "supported",
-                            "notes": "Uses an inefficient and ineffective packaging method (zip compression)."
+                            "status": "partial",
+                            "notes": "Uses an inefficient and ineffective packaging method (zip compression). Not viable for large projects. Offers poor obfuscation."
                         },
                         "windows": {
                             "status": "supported"
@@ -457,12 +458,12 @@
                             "notes": "New in r452. See <a href='https://www.construct.net/en/make-games/releases/beta/r452' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "safari": {
-                            "status": "unsupported",
-                            "github": ""
+                            "status": "supported",
+                            "notes": "New in r453. See <a href='https://www.construct.net/en/make-games/releases/beta/r453' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "chrome": {
-                            "status": "unsupported",
-                            "github": ""
+                            "status": "supported",
+                            "notes": "New in r453. See <a href='https://www.construct.net/en/make-games/releases/beta/r453' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         }
                     }
                 },
