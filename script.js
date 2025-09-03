@@ -6,7 +6,8 @@ class CompatibilityMatrix {
             supported: { icon: 'ti ti-check', text: 'Supported', color: '#4caf50' },
             partial: { icon: 'ti ti-tilde', text: 'Partially Supported', color: '#ff9800' },
             unsupported: { icon: 'ti ti-x', text: 'Unsupported', color: '#f44336' },
-            unknown: { icon: 'ti ti-question-mark', text: 'Unknown', color: '#eeeeee' }
+            unknown: { icon: 'ti ti-question-mark', text: 'Unknown', color: '#eeeeee' },
+            na: { icon: 'ti ti-x', text: 'Not Applicable', color: '#eeeeee' }
         };
         this.init();
     }
@@ -79,7 +80,7 @@ class CompatibilityMatrix {
         this.data.categories.forEach(category => {
             category.features.forEach(feature => {
                 const supportData = feature.support[exporterId];
-                if (supportData && supportData.status !== 'unknown') {
+                if (supportData && supportData.status !== 'unknown' && supportData.status !== 'na') {
                     total++;
                     if (supportData.status === 'supported') {
                         supported++;

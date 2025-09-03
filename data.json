@@ -90,7 +90,7 @@
                             "notes": "Can be configured manually. See <a href='https://www.construct.net/en/tutorials/exporting-windows-webview2-2685' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/tutorials/exporting-windows-webview2-2685</a>"
                         },
                         "safari": {
-                            "status": "unsupported"
+                            "status": "na"
                         },
                         "chrome": {
                             "status": "supported"
@@ -101,7 +101,7 @@
                     "name": "Evergreen Distribution",
                     "support": {
                         "nodejs": {
-                            "status": "unsupported"
+                            "status": "na"
                         },
                         "windows": {
                             "status": "supported"
@@ -110,7 +110,7 @@
                             "status": "supported"
                         },
                         "chrome": {
-                            "status": "unsupported"
+                            "status": "na"
                         }
                     }
                 },
@@ -279,12 +279,12 @@
                             "status": "supported"
                         },
                         "safari": {
-                            "status": "unsupported",
+                            "status": "na",
                             "github": ""
                         },
                         "chrome": {
                             "status": "unsupported",
-                            "github": ""
+                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/643"
                         }
                     }
                 }
