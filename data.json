@@ -475,15 +475,15 @@
                         },
                         "windows": {
                             "status": "unsupported",
-                            "github": ""
+                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
                         },
                         "safari": {
                             "status": "unsupported",
-                            "github": ""
+                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
                         },
                         "chrome": {
                             "status": "unsupported",
-                            "github": ""
+                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
                         }
                     }
                 },
@@ -491,7 +491,8 @@
                     "name": "Recursive Folder Contents",
                     "support": {
                         "nodejs": {
-                            "status": "unsupported"
+                            "status": "partial",
+                            "notes": "Can be achieved programatically, but no purpose built solution exists."
                         },
                         "windows": {
                             "status": "supported"
