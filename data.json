@@ -474,16 +474,16 @@
                             "status": "supported"
                         },
                         "windows": {
-                            "status": "unsupported",
-                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
+                            "status": "supported",
+                            "notes": "New in r455. See <a href='https://www.construct.net/en/make-games/releases/beta/r455' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "safari": {
-                            "status": "unsupported",
-                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
+                            "status": "supported",
+                            "notes": "New in r455. See <a href='https://www.construct.net/en/make-games/releases/beta/r455' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "chrome": {
-                            "status": "unsupported",
-                            "github": "https://github.com/Scirra/Construct-feature-requests/issues/644"
+                            "status": "supported",
+                            "notes": "New in r455. See <a href='https://www.construct.net/en/make-games/releases/beta/r455' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         }
                     }
                 },
