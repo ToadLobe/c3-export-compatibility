@@ -356,41 +356,6 @@
                     }
                 },
                 {
-                    "name": "Achievements",
-                    "support": {
-                        "nodejs": {
-                            "status": "partial"
-                        },
-                        "windows": {
-                            "status": "supported"
-                        },
-                        "safari": {
-                            "status": "supported"
-                        },
-                        "chrome": {
-                            "status": "supported"
-                        }
-                    }
-                },
-                {
-                    "name": "Languages",
-                    "support": {
-                        "nodejs": {
-                            "status": "partial",
-                            "notes": "No support for fetching a list of available languages."
-                        },
-                        "windows": {
-                            "status": "supported"
-                        },
-                        "safari": {
-                            "status": "supported"
-                        },
-                        "chrome": {
-                            "status": "supported"
-                        }
-                    }
-                },
-                {
                     "name": "DLC Management",
                     "support": {
                         "nodejs": {
