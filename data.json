@@ -319,13 +319,15 @@
                     }
                 },
                 {
-                    "name": "Remote Play Together (WIP)",
+                    "name": "Broadcasts & Remote Play",
                     "support": {
                         "nodejs": {
-                            "status": "unknown"
+                            "status": "supported"
                         },
                         "windows": {
-                            "status": "unknown"
+                            "status": "unsupported",
+                            "notes": "Inviting a friend to watch or play your game via Steam Broadcast or Remote Play Together is unsupported.",
+                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
                         },
                         "safari": {
                             "status": "unknown"
