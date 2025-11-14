@@ -46,19 +46,22 @@
                     }
                 },
                 {
-                    "name": "Multi-GPU Power Preference (WIP)",
+                    "name": "Multi-GPU Power Preference",
                     "support": {
                         "nodejs": {
-                            "status": "unknown"
+                            "status": "partial",
+                            "notes": "Only supported on macOS."
                         },
                         "windows": {
-                            "status": "unknown"
+                            "status": "unsupported",
+                            "github": "https://issues.chromium.org/issues/369219127"
                         },
                         "safari": {
-                            "status": "unknown"
+                            "status": "na"
                         },
                         "chrome": {
-                            "status": "unknown"
+                            "status": "partial",
+                            "notes": "Some people have experienced issues on Wayland. See <a href='https://cprimozic.net/notes/posts/fixing-google-chrome-using-wrong-gpu-on-linux/' target='_blank' rel='noopener noreferrer'>this post</a>."
                         }
                     }
                 },
@@ -234,23 +237,6 @@
                     }
                 },
                 {
-                    "name": "Videos (WIP)",
-                    "support": {
-                        "nodejs": {
-                            "status": "unknown"
-                        },
-                        "windows": {
-                            "status": "unknown"
-                        },
-                        "safari": {
-                            "status": "unknown"
-                        },
-                        "chrome": {
-                            "status": "unknown"
-                        }
-                    }
-                },
-                {
                     "name": "Hidden Browser Prompts",
                     "support": {
                         "nodejs": {
@@ -298,13 +284,12 @@
                     "name": "Overlay",
                     "support": {
                         "nodejs": {
-                            "status": "supported",
-                            "notes": "Requires browser flag <code>--in-process-gpu.</code>"
+                            "status": "partial",
+                            "notes": "Only works on Windows. Requires browser flag <code>--in-process-gpu.</code>"
                         },
                         "windows": {
-                            "status": "unsupported",
-                            "notes": "Rendering as an overlay is not supported. Steam opens the relevant Steam window on top of the game as a fallback. This action will exit fullscreen mode. See <a href=https://www.construct.net/en/blogs/ashleys-blog-2/trying-show-steam-overlay-1861>this blog post</a>.",
-                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
+                            "status": "partial",
+                            "notes": "Rendering as an overlay is supported as of Steamworks v1.5 using a workaround. Game recordings and broadcasts are not supported. See <a href=https://www.construct.net/en/make-games/addons/1105/steamworks/documentation>this documentation</a>."
                         },
                         "safari": {
                             "status": "unsupported",
@@ -338,7 +323,7 @@
                     }
                 },
                 {
-                    "name": "Steam Input (WIP)",
+                    "name": "Steam Input",
                     "support": {
                         "nodejs": {
                             "status": "unknown"
@@ -350,7 +335,7 @@
                             "status": "unknown"
                         },
                         "chrome": {
-                            "status": "unknown",
+                            "status": "unsupported",
                             "github": "https://github.com/Scirra/Construct-bugs/issues/8625"
                         }
                     }
