@@ -157,7 +157,7 @@
                     }
                 },
                 {
-                    "name": "Pointer Lock API",
+                    "name": "Pointer Lock",
                     "support": {
                         "nodejs": {
                             "status": "partial",
@@ -167,11 +167,11 @@
                             "status": "supported"
                         },
                         "safari": {
-                            "status": "unsupported",
-                            "github": "https://github.com/Scirra/Construct-bugs/issues/8733"
+                            "status": "supported",
+                            "notes": "New in r470. See <a href='https://www.construct.net/en/make-games/releases/beta/r470' target='_blank' rel='noopener noreferrer'>https://www.construct.net/en/make-games/releases/beta/r470</a>"
                         },
                         "chrome": {
-                            "status": "unsupported",
+                            "status": "supported",
                             "github": "https://github.com/Scirra/Construct-bugs/issues/8389"
                         }
                     }
@@ -243,16 +243,16 @@
                             "status": "supported"
                         },
                         "windows": {
-                            "status": "unsupported",
+                            "status": "supported",
                             "github": "https://github.com/MicrosoftEdge/WebView2Feedback/issues/4960"
                         },
                         "safari": {
-                            "status": "unknown",
-                            "notes": "Can't test this feature without pointer lock functionality."
+                            "status": "supported",
+                            "notes": "New in r470. See <a href='https://www.construct.net/en/make-games/releases/beta/r470' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "chrome": {
-                            "status": "unknown",
-                            "notes": "Can't test this feature without pointer lock functionality."
+                            "status": "supported",
+                            "notes": "New in r470. See <a href='https://www.construct.net/en/make-games/releases/beta/r470' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         }
                     }
                 },
@@ -289,7 +289,7 @@
                         },
                         "windows": {
                             "status": "partial",
-                            "notes": "Rendering as an overlay is supported as of Steamworks v1.5 using a workaround. Game recordings and broadcasts are not supported. See <a href=https://www.construct.net/en/make-games/addons/1105/steamworks/documentation>this documentation</a>."
+                            "notes": "Rendering as an overlay is supported as of Steamworks v1.5.0.0 using a workaround. Game recordings and broadcasts are not supported. See <a href=https://www.construct.net/en/make-games/addons/1105/steamworks/documentation>this documentation</a>."
                         },
                         "safari": {
                             "status": "unsupported",
@@ -310,33 +310,13 @@
                             "status": "supported"
                         },
                         "windows": {
-                            "status": "unsupported",
-                            "notes": "Inviting a friend to watch or play your game via Steam Broadcast or Remote Play Together is unsupported.",
-                            "github": "https://github.com/Scirra/Construct-bugs/issues/8328"
+                            "status": "unsupported"
                         },
                         "safari": {
-                            "status": "unknown"
+                            "status": "unsupported"
                         },
                         "chrome": {
-                            "status": "unknown"
-                        }
-                    }
-                },
-                {
-                    "name": "Steam Input",
-                    "support": {
-                        "nodejs": {
-                            "status": "unknown"
-                        },
-                        "windows": {
-                            "status": "unknown"
-                        },
-                        "safari": {
-                            "status": "unknown"
-                        },
-                        "chrome": {
-                            "status": "unsupported",
-                            "github": "https://github.com/Scirra/Construct-bugs/issues/8625"
+                            "status": "unsupported"
                         }
                     }
                 },
