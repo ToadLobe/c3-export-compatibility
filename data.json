@@ -37,7 +37,8 @@
                             "status": "supported"
                         },
                         "safari": {
-                            "status": "unsupported"
+                            "status": "supported",
+                            "notes": "Re-enabled in r478. See <a href='https://www.construct.net/en/make-games/releases/beta/r478' target='_blank' rel='noopener noreferrer'>release notes</a>."
                         },
                         "chrome": {
                             "status": "unsupported",
