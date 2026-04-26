@@ -227,7 +227,7 @@
                         "windows": {
                             "status": "partial",
                             "notes": "BitBlt (a common method for capturing window recordings on Windows) is not supported. OBS requires users to manually select the 'Windows 10' capture mode. Windows gamebar uses a newer, supported capture method.",
-                            "github": ""
+                            "github": "https://github.com/obsproject/obs-studio/issues/13359"
                         },
                         "safari": {
                             "status": "supported"
